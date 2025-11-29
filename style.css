@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    padding: 50px 50px;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+
+}
+h1{
+    font-size: 9rem;
+    color: white;
+    margin-bottom: 50px;
+    margin-left: 10rem;
+}
+#inc{
+   
+    font-size: 3rem;
+    color: white;
+    background-color: red;
+}
+#dec{
+    
+    font-size: 3rem;
+    color: white;
+    background-color: red;
+}
+

@@ -1,17 +1,15 @@
-let h1 = document.querySelector('h1');
-let increase = document.querySelector('#inc');
-let decrease = document.querySelector('#dec');
+let box = document.querySelector('#box')
+let button = document.querySelector('button')
 
-let a = 0
-
-increase.addEventListener('click', function(){
-    a++,
-    h1.innerHTML= a;
+let color = 0;
+button.addEventListener('click' , function(){
+    if(color === 0){
+    box.style.backgroundColor= 'yellow';
+    console.log('yellow')
+    color =1;
+    }else{
+        box.style.backgroundColor= 'transparent';
+        console.log('transparent')
+        color =0;
+    }
 })
-decrease.addEventListener('click', function(){
-    a--,
-    h1.innerHTML= a;
-})
-
-
-

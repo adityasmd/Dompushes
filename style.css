@@ -9,28 +9,23 @@ html,body{
 }
 
 body{
-    padding: 50px 50px;
+    padding: 50px 40px;
     background-color: black;
     height: 100%;
     width: 100%;
 
 }
-h1{
-    font-size: 9rem;
-    color: white;
-    margin-bottom: 50px;
-    margin-left: 10rem;
+#box{
+    height: 400px;
+    width:  400px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
 }
-#inc{
-   
+button{
     font-size: 3rem;
     color: white;
-    background-color: red;
+    background-color: royalblue;
+    margin: 50px;
+    padding: 5px 30px;
 }
-#dec{
-    
-    font-size: 3rem;
-    color: white;
-    background-color: red;
-}
-

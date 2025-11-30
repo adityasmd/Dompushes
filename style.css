@@ -8,28 +8,28 @@ html,body{
     width: 100%;
 }
 
-#main{
+main{
     height: 100%;
-    width:  100%;
-    background-color: black;
-     display: flex;
-    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+}
+.elm{
+    height: 180px;
+    width: 100%;
+    border-bottom: 2px solid grey;
+    display: flex;
     align-items: center;
 }
-.cursor{
-    color: white;
-    background-color: white;
-    height: 25px;
-    width: 25px;
-    border: 1px solid white;
-    border-radius: 50%;
-    position: absolute;
-     mix-blend-mode: difference;
-    transition: all linear 0.3s;
-   
+
+.elm h1{
+    font-size: 5vw;
 }
-h1{
-    color: white;
-    font-size: 150px;
-    font-weight: 900;
+.elm img{
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    opacity: 0;
+    mix-blend-mode: difference;
+    transition: all ease 0.4s;
 }

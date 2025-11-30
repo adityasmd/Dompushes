@@ -1,15 +1,7 @@
-let box = document.querySelector('#box')
-let button = document.querySelector('button')
+let crscr = document.querySelector('.cursor');
+let main = document.querySelector('#main');
 
-let color = 0;
-button.addEventListener('click' , function(){
-    if(color === 0){
-    box.style.backgroundColor= 'yellow';
-    console.log('yellow')
-    color =1;
-    }else{
-        box.style.backgroundColor= 'transparent';
-        console.log('transparent')
-        color =0;
-    }
+main.addEventListener('mousemove', function(dets){
+    crscr.style.left = dets.x +'px'
+    crscr.style.top = dets.y +'px'
 })

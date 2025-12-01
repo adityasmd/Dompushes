@@ -1,17 +1,10 @@
-let elem = document.querySelectorAll('.elm');
-let img = document.querySelectorAll('img')
+let btn = document.querySelector('button')
+let box = document.querySelector('.box')
 
-
-elem.forEach(function(val){
-
-   val.addEventListener("mouseenter",function(){
-      val.childNodes[3].style.opacity = 1;
-   });
-   val.addEventListener("mouseleave",function(){
-      val.childNodes[3].style.opacity = 0;
-   });
-   val.addEventListener("mousemove", function(dets){
-    val.childNodes[3].style.left= dets.x+ "px"
-    val.childNodes[3].style.top= dets.y+ "px"
-   });
+btn.addEventListener('click', function(){
+   let c1 = Math.floor(Math.random()*256)
+   let c2 = Math.floor(Math.random()*256)
+   let c3 = Math.floor(Math.random()*256)
+   
+   box.style.backgroundColor = `rgb(${c1},${c2}, ${c3})`
 })

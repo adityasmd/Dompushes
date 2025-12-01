@@ -6,30 +6,31 @@
 html,body{
     height: 100%;
     width: 100%;
-}
-
-main{
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-    position: relative;
-}
-.elm{
-    height: 180px;
-    width: 100%;
-    border-bottom: 2px solid grey;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: black;
 }
 
-.elm h1{
-    font-size: 5vw;
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(150, 110, 150);
+    border: 2px solid white;
+ 
 }
-.elm img{
-    height: 130px;
-    width: 130px;
-    position: absolute;
-    opacity: 0;
-    mix-blend-mode: difference;
-    transition: all ease 0.4s;
+
+
+button{
+    padding: 10px 16px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(156, 99, 13);
+    color: white; 
+}
+
+button:active{
+    transform: scale(0.90);
 }

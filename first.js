@@ -1,50 +1,26 @@
+let btn= document.querySelector('button')
+let main = document.querySelector('main')
 
-
-let arr= [
-   {
-      Team:"MI",
-      primary:"blue",
-      secondary:"Gold",
-      Trophies: 5,
-      captain: "Rohit"
-   },
-   {
-      Team:"RCB",
-      primary:"red",
-      secondary:"grey",
-      Trophies: 1,
-      captain: "rajat"
-   },
-   {
-      Team:"CSK",
-      primary:"yellow",
-      secondary:"white",
-      Trophies: 5,
-      captain: "MSD"
-   },
-   {
-      Team:"PK",
-      primary:"crimson",
-      secondary:"grey",
-      Trophies: 0,
-      captain: "sheryash"
-   },
-   {
-      Team:"RR",
-      primary:"pink",
-      secondary:"navyblue",
-      Trophies: 5,
-      captain: "sanju"
-   },
-];
-
-let btn = document.querySelector('button')
-let box = document.querySelector('.box')
-let body= document.querySelector('body')
 btn.addEventListener('click', function(){
-  let win = Math.floor( Math.random()*arr.length);
-  box.innerHTML =  `Team: ${arr[win].Team}  Trophies: ${arr[win].Trophies} captain: ${arr[win].captain}`
-  body.style.backgroundColor = arr[win].primary
-  box.style.backgroundColor = arr[win].secondary
-})
+  let newelem= document.createElement('div');
+   newelem.style.height= 120+'px'
+   newelem.style.width= 120+'px'
+   newelem.style.position= 'absolute'
+   newelem.style.backgroundColor= `rgb(200,200,200)`
 
+   main.appendChild(newelem);
+
+   let x = Math.random()*100
+   let y = Math.random()*100
+   let rotation = Math.random()*360
+
+   newelem.style.left= x+'%'
+   newelem.style.top= y+'%'
+   newelem.style.rotate= rotation+'deg'
+
+   let c1 = Math.floor(Math.random()*356)
+   let c2 = Math.floor(Math.random()*356)
+   let c3 = Math.floor(Math.random()*356)
+
+   newelem.style.backgroundColor= `rgb(${c1},${c2},${c3})`
+})

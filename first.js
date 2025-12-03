@@ -1,28 +1,20 @@
+let grow= 0
 let btn= document.querySelector('button')
-let main = document.querySelector('main')
-
-let arr=['hellopajiii','kya heroooooo', 'chal bhaiiiiiiiiii','kya haal chal','bade bhai ke bhai']
+let inner= document.querySelector('.inner')
+let h1 = document.querySelector('h1')
 
 btn.addEventListener('click', function(){
-   let h1= document.createElement('h1');
-   let i= Math.floor(Math.random()*arr.length)
+   let int = setInterval(() => {
+      grow++
+      h1.innerHTML= grow+'%'
+      inner.style.width= grow+'%'
+   }, 100);
 
-   h1.innerHTML= arr[i] 
-   main.appendChild(h1)
-   h1.style.position= 'absolute'
-   h1.style.fontSize= 50+'px'
+   setTimeout(() => {
+      clearInterval(int)
+      btn.innerHTML='Downloaded'
+      btn.style.opacity= 0.6
+      btn.style.pointerEvents= 'none'
+   }, 10000);
 
-   let x = Math.random()*100
-   let y = Math.random()*100
-   let rotation = Math.random()*360
-   
-   h1.style.left= x+'%'
-   h1.style.top= y+'%'
-   h1.style.rotate= rotation+'deg'
-
-   let c1 = Math.floor(Math.random()*356)
-   let c2 = Math.floor(Math.random()*356)
-   let c3 = Math.floor(Math.random()*356)
-
-   h1.style.color= `rgb(${c1},${c2},${c3})`
 })

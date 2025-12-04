@@ -1,20 +1,17 @@
-let grow= 0
-let btn= document.querySelector('button')
-let inner= document.querySelector('.inner')
-let h1 = document.querySelector('h1')
+let imgs = document.querySelector('img')
+let love= document.querySelector('#love')
 
-btn.addEventListener('click', function(){
-   let int = setInterval(() => {
-      grow++
-      h1.innerHTML= grow+'%'
-      inner.style.width= grow+'%'
-   }, 100);
+imgs.addEventListener('dblclick', () =>{
+   love.style.opacity= 0.8;
+   love.style.transform= 'translate(-50%,-50%) scale(1)  rotate(0deg)';
 
    setTimeout(() => {
-      clearInterval(int)
-      btn.innerHTML='Downloaded'
-      btn.style.opacity= 0.6
-      btn.style.pointerEvents= 'none'
-   }, 10000);
-
+       love.style.transform= 'translate(-50%,-177%) scale(1)  rotate(-60deg)';
+   }, 800);
+   setTimeout(() => {
+      love.style.opacity= 0;
+   }, 1100);
+    setTimeout(() => {
+       love.style.transform= 'translate(-50%,-50%) scale(0)  rotate(0deg)';
+   }, 2000);
 })

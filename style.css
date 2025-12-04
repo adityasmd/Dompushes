@@ -9,20 +9,19 @@ html,body{
     height: 100%;
     width: 100%;
     gap: 10px;
-    background-color: pink;
-    overflow: hidden;
+    background-color: royalblue;
 }
 main{
     height: 100%;
     width: 100%;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .cards{
-    height: 80%;
+    height: 600px;
     width: 30%;
     border: 5px solid black;
     border-radius: 10px;
@@ -37,22 +36,22 @@ main{
    height: 400px;
    width: 400px;
    object-fit: cover;
-   z-index: 9;
+   opacity: 0.9;
    border: 3px solid navy;
-}
-.cards i{
-    font-size: 120px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0)  rotate(-60deg);
-    opacity: 0;
-    transition: all cubic-bezier(.17,.67,.47,1.32) 0.4s;
+   border-radius: 8px;
 }
 .cards h1{
     background-color: black;
-    color: white;
+    color: red;
     padding: 1rem;
     border-radius: 10px;
+}
+.cards h2{
+    color: white;
+    
+}
+.cards h3{
+   text-align: center;
+    color: white;
 }
 

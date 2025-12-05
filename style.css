@@ -9,50 +9,19 @@ html,body{
     height: 100%;
     width: 100%;
     gap: 10px;
-    background-color: pink;
-    overflow: hidden;
+    background-color: rosybrown;
+    cursor: none;
 }
 main{
     height: 100%;
     width: 100%;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.cards{
-    height: 80%;
-    width: 30%;
-    border: 5px solid black;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-}
-.cards img{
-   height: 400px;
-   width: 400px;
-   object-fit: cover;
-   z-index: 9;
-   border: 3px solid navy;
-}
-.cards i{
-    font-size: 120px;
+main img{
+    height: 50px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0)  rotate(-60deg);
-    opacity: 0;
-    transition: all cubic-bezier(.17,.67,.47,1.32) 0.4s;
 }
-.cards h1{
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    border-radius: 10px;
-}
-

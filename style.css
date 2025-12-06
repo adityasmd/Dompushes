@@ -8,30 +8,31 @@
 html,body{
     height: 100%;
     width: 100%;
-    gap: 10px;
-    background-color: rosybrown;
-    cursor: none;
 }
 main{
     height: 100%;
     width: 100%;
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+   background-color: black;
 }
 
-.card{
-    height: 200px;
-    width: 500px;
-    background-color: grey;
-    padding: 60px;
+.elem1{
+    background-color: royalblue;
+    padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
 }
-h1{
-    text-align: center;
-    font-size: 50px;
+.elem1 h1{
+    font-size: 40px;
+    font-weight: 900;
+    color: black;
 }
-
+.elem1 button{
+    color: black;
+    font-weight: 900;
+    font-size: x-large;
+    padding: 10px;
+    background-color: brown;
+}
 

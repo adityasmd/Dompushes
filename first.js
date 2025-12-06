@@ -1,7 +1,11 @@
-let div= document.querySelector('body')
-let h1= document.querySelector('h1')
+var allbtn= document.querySelectorAll('button')
 
-
-div.addEventListener('keydown', function(input){
-  h1.innerHTML= input.code
+allbtn.forEach(function(elem){
+    elem.addEventListener('click', function(){
+      if(elem.innerHTML === 'Add Friend'){
+        elem.innerHTML= 'Remove Friend'
+      }else {
+        elem.innerHTML= 'Add Friend'
+      }
+    })
 })
